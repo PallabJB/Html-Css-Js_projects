@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "category": "Computers",
+        "brand": "Apple",
+        "price": 999.99,
+        "stock": 250,
+        "image": "../images/laptop.png",
+        "description": "Powerful laptop with a quad-core i9 processor, 8GB RAM, ...."
+        
+    },
+    {
+        "id": 2,
+        "name": "Headphone",
+        "category": "Speaker",
+        "brand": "Bose",
+        "price": 600.99,
+        "stock": 180,
+        "image": "../images/headphone.png" ,
+        "description": "Powerful laptop with a quad-core i9 processor, 8GB RAM, ...."
+        
+    },
+
+    {
+        "id": 3,
+        "name": "Ipad",
+        "category": "Tablet",
+        "brand": "Apple",
+        "price": 459.99,
+        "stock": 340,
+        "image": "../images/ipad.png",
+        "description": "Powerful laptop with a quad-core i9 processor, 8GB RAM, ...."
+        
+    },
+
+    {
+        "id": 4,
+        "name": "Smartphone",
+        "category": "Mobile",
+        "brand": "Samsung",
+        "price": 799.99,
+        "stock": 299,
+        "image": "../images/smartphone.png",
+        "description": "Powerful laptop with a quad-core i9 processor, 8GB RAM, ...."
+        
+    },
+
+    {
+        "id": 5,
+        "name": "Smartwatch",
+        "category": "Watch",
+        "brand": "Noise",
+        "price": 99.99,
+        "stock": 50,
+        "image": "../images/smartwatch.png",
+        "description": "Powerful laptop with a quad-core i9 processor, 8GB RAM"
+        
+    },
+
+    {
+        "id": 6,
+        "name": "Tv",
+        "category": "TV",
+        "brand": "LG",
+        "price": 569.99,
+        "stock": 69,
+        "image": "../images/tv.png",
+        "description": "Powerful laptop with a quad-core i9 processor, 8GB RAM, ...."
+        
+    }
+]

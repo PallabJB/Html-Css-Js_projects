@@ -1,0 +1,133 @@
+  <!-- ========== Start Navbar ========== -->
+
+
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <script type="module" src="/@vite/client"></script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css"/>
+    <title>E-commerce_website</title>
+  </head>
+  <body>
+    <header class="section-navbar" >
+      <section class="top_txt" >
+        <div class="head container" >
+          <div class="head_txt" >
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sign_in_up" >
+            <a href="# ">SIGN IN</a>
+            <a href="#" style="padding-left: 3rem;">SIGN UP</a>
+          </div>
+        </div>
+      </section>
+      <div class="container" >
+        <div class="navbar-brand" >
+          <a href="index.html">
+            <img
+              src="/images/logo.png"
+              alt="PJ Electronics"
+              class="logo"
+              width="80%"
+              height="auto"/>
+          </a>
+        </div>
+        <nav class="navbar" >
+          <ul>
+            <li class="nav-item" >
+              <a href="/" class="nav-link" >Home</a>
+            </li>
+            <li class="nav-item" >
+              <a href="about.html" class="nav-link" >about</a>
+            </li>
+            <li class="nav-item" >
+              <a href="products.html" class="nav-link" >products</a>
+            </li>
+            <li class="nav-item" >
+              <a href="contact.html" class="nav-link" >contact</a>
+            </li>
+            <li class="nav-item" >
+              <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+                <i class="fa-solid fa-cart-shopping"> 0</i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+       </div>
+      
+    </header>
+
+  <!-- ========== End Navbar ========== -->
+<section class="addToCartElement">
+    <div class="container" >
+        <section>
+            <div id="productCartContainer"></div>
+        </section>
+
+        <section class="productCartTotalElem">
+            <div class="productCartTotalElement" >
+                <p>Selected Offer Summary</p>
+                <div class="productOrderTotal" >
+                    <div>
+                        <p>Sub Total:</p>
+                        <p class="productSubTotal">0</p>
+                    </div>
+                    <div>
+                        <p>Tax:</p>
+                        <p class="productTax">₹50</p>
+                    </div>
+                    <hr/>
+                    <div>
+                        <p>Final Total:</p>
+                        <p class="productFinalTotal" >0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+<!---Template for a product  -->
+
+<template id="productCartTemplate">
+    <div class="cards" id="cardValue" >
+        <article class="information [card]" >
+            <div>
+                <span class="category" ></span>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="" alt="" />
+            </div>
+            <h2 class="productName"></h2>
+            <p class="productPrice" ></p>
+
+            <div class="stockElement">
+                <button class="cartDecrement">-</button>
+                <p class="productQuantity" data-quantity="1">1</p>
+                <button class="cartIncrement">+</button>
+            </div>
+
+            <!---remove cart button--->
+            <button class="add-to-cart-button remove-to-cart-button">
+                Remove
+            </button>
+
+        </article>
+    </div>
+</template>
+
+
+
+     <!--START FOOTER  SECTION -->
+     <footer class="section-footer">
+      <script src="footer.js"></script>
+    </footer>
+   <!--END FOOTER -->
+  <script type="module" src="showAddToCartCards.js" ></script>
+</body>
+</html>
